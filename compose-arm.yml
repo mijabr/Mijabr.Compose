@@ -12,3 +12,6 @@ services:
   home:
     image: mijabr/mijabr-home:arm
     
+  scrabble:
+    image: mijabr/mijabr-scrabble:arm
+  

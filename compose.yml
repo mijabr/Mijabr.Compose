@@ -11,3 +11,7 @@ services:
 
   home:
     image: mijabr/mijabr-home:amd86
+
+  scrabble:
+    image: mijabr/mijabr-scrabble:amd86
+  
