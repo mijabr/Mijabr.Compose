@@ -1,13 +1,13 @@
 version: "3.7"
 
 services:
-  proxy:
-    image: mijabr/mijabr-proxy:arm
-    ports:
-      - "80:80"
+  # proxy:
+  #   image: mijabr/mijabr-proxy:arm
 
   identity:
     image: mijabr/mijabr-identity:arm
+    ports:
+      - "80:80"
 
   home:
     image: mijabr/mijabr-home:arm

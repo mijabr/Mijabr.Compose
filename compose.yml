@@ -1,13 +1,13 @@
 version: "3.7"
 
 services:
-  proxy:
-    image: mijabr/mijabr-proxy:amd86
-    ports:
-      - "80:80"
+  # proxy:
+  #   image: mijabr/mijabr-proxy:amd86
 
   identity:
     image: mijabr/mijabr-identity:amd86
+    ports:
+      - "80:80"
 
   home:
     image: mijabr/mijabr-home:amd86
