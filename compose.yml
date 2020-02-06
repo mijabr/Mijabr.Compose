@@ -8,10 +8,16 @@ services:
     image: mijabr/mijabr-identity:amd86
     ports:
       - "80:80"
-
+    env_file:
+      - hosts-test.env
+  
   home:
     image: mijabr/mijabr-home:amd86
+    env_file:
+      - hosts-test.env
 
   scrabble:
     image: mijabr/mijabr-scrabble:amd86
+    env_file:
+      - hosts-test.env
   

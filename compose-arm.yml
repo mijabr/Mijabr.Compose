@@ -8,10 +8,16 @@ services:
     image: mijabr/mijabr-identity:arm
     ports:
       - "80:80"
+    env_file:
+      - hosts-mijabr.env
 
   home:
     image: mijabr/mijabr-home:arm
+    env_file:
+      - hosts-mijabr.env
     
   scrabble:
     image: mijabr/mijabr-scrabble:arm
+    env_file:
+      - hosts-mijabr.env
   
